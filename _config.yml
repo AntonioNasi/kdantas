@@ -1,0 +1,15 @@
+title: Karollynne Dantas
+description: Site Pessoal
+baseurl: ""
+url: "https://kdantas.com.br"
+author: Karollynne Dantas
+email: contato@exemplo.com
+lang: pt-BR
+
+theme: null
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+permalink: /:title/
