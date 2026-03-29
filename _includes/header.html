@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+</head>
+<body>
+    <section class="sec-header">
+        <header class="header">
+            <div class="cx-nav">
+                <nav>
+                    <div class="logo">
+                        <img src="{{'/assets/img/logo.png' | relative_url}}">
+                    </div>
+                    <div class="menu">
+                        <a class="menu-item" href="{{'/' | relative_url}}">Início</a>
+                        <a class="menu-item" href="{{'/blog/' | relative_url}}">Blog</a>
+                        <a class="menu-item" href="{{'/textos/' | relative_url}}">Textos</a>
+                        <a class="menu-item" href="{{'/sobre/' | relative_url}}">Sobre</a>
+                        <a class="menu-item" href="{{'/contato/' | relative_url}}">Contato</a>
+                    </div>
+                    <div class="rdSociais">
+                        <a href="#">
+                            <img src="{{'/assets/img/insta.png' | relative_url}}">
+                        </a>
+                        <a href="#">
+                            <img src="{{'/assets/img/email.png' | relative_url}}">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="bVindos">
+                <div class="atalhos"></div>
+            </div>
+        </header>
+    </section>
+</body>
+</html>

@@ -3,5 +3,9 @@ layout: default
 title: Início
 ---
 
-<img src="{{ '/assets/img/logo.png' | absolute_url }}">
-<h1>Em breve, mais um site artesanal.</h1>
+<section class="sec-prev">
+    <h1>Acompanhe meu blog</h1>
+    <p>Textos não acadêmicos e reflexoões sobre o cotidiano</p>
+    <div class="cx-prev">
+    </div>
+</section>

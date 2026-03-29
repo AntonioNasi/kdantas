@@ -3,35 +3,96 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
-    background-color: #ffe4f7;
+    background-color: #fefefe;
+}
+p{
+    font-family: "Lora", serif;
+}
+h1, h2, h3, a{
+    font-family: "Zain", sans-serif;
+}
+
+/* Header */
+.cx-nav{
+    background-color: #c2c5fa;
+}
+nav{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo img{
+    width: 8%;
+}
+nav .menu a{
+    margin: 0px 10px;
+    text-decoration: none;
+    color: #fefefe;
+}
+nav .menu a:hover{
+    color: #170a1c;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+}
+nav .rdSociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+nav .rdSociais a{
+    display: block;
+    margin: 0px 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+nav .rdSociais a img{
+    width: 30px;
+    height: 30px;
+}
+
+.bVindos{
+    height: 440px;
+    background-image: url(/assets/img/fundo_header.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    border-top: solid 1px transparent;
+}
+.bVindos .atalhos{
+    width: 580px;
+    height: 140px;
+    border-radius: 20px;
+    background-color: #b1e1ff;
+    margin: 360px auto 0px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+    position: relative;
+    z-index: 1;
+}
+
+
+.sec-prev{
+    background-image: url(/assets/img/pattern.png);
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0px 40px;
+}
+.sec-prev h1{
     text-align: center;
-    color: #170a1c;
 }
-body h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 10px;
-    font-size: 18px;
+.sec-prev p{
+    text-align: center;
+    margin: -10px 0px 30px;
 }
-body img{
-    margin-top: 140px;
-    width: 8%;
-
-    animation-name: pulse;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes pulse {
-    0%{transform: scale(1.1); opacity: .5; filter: grayscale(100%);}
-}
-
-@media screen and (max-width:600px){
-    body img{
-        width: 30%;
-    }
+.cx-prev{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    border-radius: 10px;
 }
