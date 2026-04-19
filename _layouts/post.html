@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+  {% include head.html %}
+
+</head>
+
+<body> 
+
+  {% include header.html %}
+
+  <section class="container-post">
+    <div class="cx-post">
+
+      <div class="left">coluna esquerda</div>
+
+      <div class="meio">
+        <article class="post">
+          <h1>{{ page.title }}</h1>
+
+          <p class="post-meta">
+            {{ page.date | date: "%d/%m/%Y" }}
+            {% if page.author %}
+              · {{ page.author }}
+            {% else %}
+              · {{ site.author }}
+            {% endif %}
+            | <span id="busuanzi_value_page_pv">0</span> pessoas leram esse post
+          </p>
+
+          <p>
+            {% if page.categories %}
+            {% for category in page.categories %}
+            <a href="/categories/{{ category | slugify }}/" class="post-category">
+              {{ category }}
+            </a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+            {% endif %}
+          </p>
+
+          {% if page.image %}
+          <img src="{{ page.image }}" alt="{{ page.title }}">
+          {% endif %}
+
+          <div class="content">
+            {{ content }}
+          </div>
+        </article>
+      </div>
+
+      <div class="direita">Coluna direita</div>
+
+    </div>
+  </section>
+
+  {% include footer.html %}
+  
+</body>
+</html>

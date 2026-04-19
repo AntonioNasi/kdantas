@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Post title primeiro"
-date: 2026-03-01
-image: https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2023/12/05160922/namibia.jpg
-excerpt: "Esse é um resumo do post, apenas isso. Mais informações leia o post completo."
+title: "Este é outro modelo de post"
+date: 2026-04-03
+image: https://cdn.pixabay.com/photo/2023/06/10/14/48/zebras-8054175_1280.jpg
+excerpt: "Só mais um resumo do post, apenas isso. Mais informações leia o post completo."
 feature:
 sidebar:
 categories: Nocategory

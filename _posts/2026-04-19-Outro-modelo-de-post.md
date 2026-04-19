@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Post title primeiro"
+title: "Post title segundo"
 date: 2026-03-01
-image: https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2023/12/05160922/namibia.jpg
-excerpt: "Esse é um resumo do post, apenas isso. Mais informações leia o post completo."
+image: https://www.nationalgeographic.com/content/dam/expeditions/destinations/africa/hero-africa-elephants.jpg
+excerpt: "mais um resumo do post, apenas isso. Mais informações leia o post completo."
 feature:
 sidebar:
 categories: Nocategory
