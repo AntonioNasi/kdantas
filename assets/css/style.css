@@ -31,6 +31,28 @@ h1, h2, h3, a{
 
 
 
+/* Div com borda ondulada */
+.pagEmConst{
+    max-width: 1200px;
+    margin: 100px auto 60px;
+}
+.pagEmConst h1{
+    font-size: 18px;
+    text-align: center;
+}
+.pagEmConst .pgConst-img{
+    max-width: 300px;
+    margin: 0 auto;
+}
+.pagEmConst img{
+    width: 100%;
+}
+.pagEmConst p{
+    text-align: center;
+}
+
+
+
 /* Header */
 .cx-nav{
     background-color: #c2c5fa;
@@ -93,14 +115,35 @@ nav .rdSociais a img{
     }
 }
 .bVindos .atalhos{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
     width: 580px;
-    height: 140px;
     border-radius: 20px;
     background-color: #b1e1ff;
     margin: 360px auto 0px;
+    padding: 18px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
     position: relative;
     z-index: 1;
+}
+.bVindos .atalhos .icons{
+    display: block;
+    flex-basis: 80px;
+    text-decoration: none;
+    color: #fefefe;
+}
+.bVindos .atalhos .icons img{
+    width: 100%;
+}
+.bVindos .atalhos .icons:hover img{
+    transform: scale(1.1);
+    transition: scale .3s;
+}
+.bVindos .atalhos .icons p{
+    text-align: center;
+    font-family: "Zain", sans-serif;
 }
 @media screen and (max-width:600px){
     .bVindos .atalhos{
@@ -129,8 +172,12 @@ nav .rdSociais a img{
     border-radius: 5px;
 }
 @media screen and (max-width:600px){
+    .sec-prev{
+        padding: 0px 16px;
+    }
     .cx-prev{
         display: block;
+        margin-bottom: 40px;
     }
     .cx-prev article{
         margin-bottom: 24px;
@@ -154,6 +201,14 @@ footer{
     justify-content: center;
     background-color: #b1e1ff;
 }
+@media screen and (max-width:600px){
+    footer{
+        padding: 0px 16px;
+    }
+    footer p{
+        text-align: center;
+    }
+}
 
 
 
@@ -168,6 +223,16 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 24px;
+}
+@media screen and (max-width:600px){
+    .cx-posts{
+        display: block;
+        padding: 0px 16px;
+    }
+    .cx-posts .post-preview{
+        margin-bottom: 34px;
+        padding-bottom: 12px;
+    }
 }
 .cx-posts .post-preview{
     background-color: #fefefe;
@@ -229,4 +294,13 @@ footer{
     border: solid 1px rgba(23, 10, 28, .1);
     border-radius: 5px;
     background-color: #fefefe;
+}
+@media screen and (max-width:600px){
+    .cx-post{
+        display: block;
+        padding: 0px 16px;
+    }
+    .left{
+        display: none;
+    }
 }
