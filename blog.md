@@ -32,7 +32,7 @@ title: Blog
         {% endif %}
       </p>
 
-      <p>{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+      <p class="trecho">{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
 
     </div>
 
